@@ -9,6 +9,7 @@
 * [ROPGadget](https://github.com/JonathanSalwan/ROPgadget)
 * [binwalk](https://github.com/devttys0/binwalk)
 * [apktool](http://ibotpeaches.github.io/Apktool/)
+* [zeratool](https://github.com/ChrisTheCoolHut/Zeratool)
 
 ## Docker
 
