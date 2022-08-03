@@ -76,8 +76,8 @@ RUN dpkg --add-architecture i386 && \
 RUN apt update && \
     apt install --no-install-recommends -y default-jre && \
     wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool && \
-    wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.0.2.jar && \
-    mv apktool_2.0.2.jar /bin/apktool.jar && \
+    wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.6.1.jar && \
+    mv apktool_2.6.1.jar /bin/apktool.jar && \
     mv apktool /bin/ && \
     chmod 755 /bin/apktool && \
     chmod 755 /bin/apktool.jar
@@ -130,9 +130,9 @@ RUN wget https://sh.rustup.rs && \
     rm index.html
 
 # Install ripgrep from Releases
-RUN curl -LO https://github.com/BurntSushi/ripgrep/releases/download/0.9.0/ripgrep_0.9.0_amd64.deb && \
-    dpkg -i ripgrep_0.9.0_amd64.deb && \
-    rm ripgrep_0.9.0_amd64.deb
+RUN curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb && \
+    dpkg -i ripgrep_13.0.0_amd64.deb && \
+    rm ripgrep_13.0.0_amd64.deb
 
 # Bash 4.4 for vim mode
 # RUN wget http://ftp.gnu.org/gnu/bash/bash-4.4.tar.gz && \
@@ -166,7 +166,7 @@ RUN cd /root/tools && \
 
 # Install DrMemory
 RUN cd /root/tools && \
-    wget https://github.com/DynamoRIO/drmemory/releases/download/release_1.11.0/DrMemory-Linux-1.11.0-2.tar.gz && \
+    wget https://github.com/DynamoRIO/drmemory/releases/download/cronbuild-2.5.19128/DrMemory-Linux-2.5.19128.tar.gz && \
     tar zxvf DrMemory* && \
     cd DrMemory* && \
     ln -s $PWD/bin/drmemory /usr/bin/drmemory-32 && \
@@ -174,10 +174,10 @@ RUN cd /root/tools && \
 
 # Install DynamoRIO
 RUN cd /root/tools && \
-    wget https://github.com/DynamoRIO/dynamorio/releases/download/cronbuild-7.91.18058/DynamoRIO-x86_64-Linux-7.91.18058-0.tar.gz && \
+    wget https://github.com/DynamoRIO/dynamorio/releases/download/cronbuild-9.0.19181/DynamoRIO-AArch64-Linux-9.0.19181.tar.gz && \
     tar zxvf DynamoRIO*tar.gz && \
     rm DynamoRIO*tar.gz && \
-    wget https://github.com/DynamoRIO/dynamorio/releases/download/cronbuild-7.91.18058/DynamoRIO-i386-Linux-7.91.18058-0.tar.gz && \
+    wget https://github.com/DynamoRIO/dynamorio/releases/download/cronbuild-9.0.19181/DynamoRIO-Linux-9.0.19181.tar.gz && \
     tar zxvf DynamoRIO*tar.gz && \
     rm DynamoRIO*tar.gz
 
@@ -230,7 +230,7 @@ RUN wget -O ~/.gdbinit-gef-extras.sh -q https://github.com/hugsy/gef/raw/master/
     ~/.gdbinit-gef-extras.sh
 
 # Install go
-RUN wget https://dl.google.com/go/go1.14.3.linux-amd64.tar.gz && \
+RUN wget https://go.dev/dl/go1.19.linux-amd64.tar.gz && \
     tar -C /usr/local -xzf go*tar.gz
 
 COPY .tmux.conf /root/.tmux.conf
