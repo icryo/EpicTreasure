@@ -1,4 +1,4 @@
-# EpicTreasure - Batteries included CTF VM
+# EpicTreasure - Batteries included CTF VM all credit to CTFHacker and 20.04 support from xentrick
 
 ## Tools included
 * [Pwntools](https://github.com/gallopsled/pwntools)
@@ -116,6 +116,12 @@ python
 >>> import keystone
 >>> import unicorn
 >>>
+```
+
+### Zeratool
+```
+wget https://github.com/ChrisTheCoolHut/Zeratool/raw/master/challenges/bof1 -o bof1
+zeratool bof1
 ```
 
 ### Shared folder
