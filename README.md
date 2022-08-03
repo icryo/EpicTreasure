@@ -4,10 +4,9 @@
 * [Pwntools](https://github.com/gallopsled/pwntools)
 * [Pwndbg](https://github.com/zachriggle/pwndbg)
 * [Radare2](https://github.com/radare/radare2)
-* [Firmware tools (fmk / qemu)](http://reverseengineering.stackexchange.com/questions/8829/cross-debugging-for-mips-elf-with-qemu-toolchain)
+* [Firmware tools (qemu)](http://reverseengineering.stackexchange.com/questions/8829/cross-debugging-for-mips-elf-with-qemu-toolchain)
 * [angr](https://github.com/angr/angr)
 * [ROPGadget](https://github.com/JonathanSalwan/ROPgadget)
-* [binwalk](https://github.com/devttys0/binwalk)
 * [apktool](http://ibotpeaches.github.io/Apktool/)
 * [zeratool](https://github.com/ChrisTheCoolHut/Zeratool)
 
