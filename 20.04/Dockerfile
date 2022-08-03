@@ -220,6 +220,10 @@ RUN cd /root/tools && \
 # Install angr
 RUN python3 -m pip install angr
 
+# Install zeratool
+RUN python3 -m pip install zeratool
+
+
 # Install Rust binaries
 RUN /root/.cargo/bin/cargo install ripgrep exa bat
 
