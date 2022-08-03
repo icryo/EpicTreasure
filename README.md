@@ -14,8 +14,8 @@
 ## Docker
 
 ```
-docker pull ctfhacker/epictreasure
-docker run --rm -v /path/to/host/share/folder:/root/host-share --privileged -it --workdir=/root ctfhacker/epictreasure
+docker pull icryo/epictreasure
+docker run --rm -v /path/to/host/share/folder:/root/host-share --privileged -it --workdir=/root icryo/epictreasure
 ```
 
 ## Default settings
