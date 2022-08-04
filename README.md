@@ -15,25 +15,18 @@
 ```
 docker pull icryo/epictreasure
 docker run --rm -v /path/to/host/share/folder:/root/host-share --privileged -it --workdir=/root icryo/epictreasure
+
+or build with
+
+cd 20.04
+docker build -t icryo/epictreasure .
+docker run --rm -v /path/to/host/share/folder:/root/host-share --privileged -it --workdir=/root icryo/epictreasure
 ```
 
 ## Default settings
 By default, [my dotfiles](http://github.com/ctfhacker/dotfiles) are installed onto the VM. Simply comment out the following lines in `Dockerfile` if you don't want my settings.
 
-```
-# Personal dotfiles
-RUN cd /root && \
-    rm .bashrc && \
-    git clone --recursive https://github.com/ctfhacker/dotfiles.git && \
-    cd dotfiles && \
-    ./install.sh
-```
 
-Then rebuild the Docker
-
-```
-docker build -t et .
-```
 
 #### Terminal
 * Colorscheme for the terminal and vim is [solarized](https://github.com/altercation/solarized)
