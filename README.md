@@ -9,6 +9,7 @@ All credit to CTFHacker
 * [ROPGadget](https://github.com/JonathanSalwan/ROPgadget)
 * [apktool](http://ibotpeaches.github.io/Apktool/)
 * [zeratool](https://github.com/ChrisTheCoolHut/Zeratool)
+* capstone/unicorn (need to fix keystone)
 
 ## Docker
 
