@@ -39,16 +39,19 @@ sudo make install install3
 popd
 echo "[+] Done" >&2
 
-#echo "[+] Installing unicorn + bindings" >&2
-#pushd /tmp
-#git clone --quiet https://github.com/unicorn-engine/unicorn.git
-#cd unicorn
-#MAKE_JOBS=${NB_CPU} ./make.sh
-#sudo ./make.sh install
-#cd ./bindings/python
-#sudo make install install3
-#popd
-#echo "[+] Done" >&2
+echo "[+] Installing unicorn + bindings" >&2
+pushd /tmp
+git clone --quiet https://github.com/unicorn-engine/unicorn.git
+cd unicorn
+mkdir build; cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make
+
+
+cd ./bindings/python
+sudo make install install3
+popd
+echo "[+] Done" >&2
 
 echo "[+] Cleanup" >&2
 sudo rm -fr -- /tmp/{keystone,capstone,unicorn}
