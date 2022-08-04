@@ -1,5 +1,5 @@
-# EpicTreasure - Batteries included CTF VM all credit to CTFHacker and 20.04 support from xentrick
-
+# EpicTreasure - Batteries included CTF VM 
+## all credit to CTFHacker 
 ## Tools included
 * [Pwntools](https://github.com/gallopsled/pwntools)
 * [Pwndbg](https://github.com/zachriggle/pwndbg)
