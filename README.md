@@ -1,5 +1,5 @@
 # EpicTreasure - Batteries included CTF VM 
-## all credit to CTFHacker 
+All credit to CTFHacker 
 ## Tools included
 * [Pwntools](https://github.com/gallopsled/pwntools)
 * [Pwndbg](https://github.com/zachriggle/pwndbg)
