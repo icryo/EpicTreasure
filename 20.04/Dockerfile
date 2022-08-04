@@ -32,7 +32,7 @@ RUN apt update && \
     gdb-multiarch gdbserver git  zip\
     libncursesw5-dev python3-setuptools python-setuptools pkg-config\
     tmux tree stow virtualenvwrapper \
-    wget nano vim unzip \
+    wget nano vim unzip gcc-aarch64-linux-gnu\
     libjpeg8 libjpeg62-dev libfreetype6 libfreetype6-dev \
     squashfs-tools zlib1g-dev liblzma-dev python-magic cmake \
     z3 net-tools strace ltrace libglib2.0-dev\
