@@ -47,7 +47,7 @@ mkdir build; cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make
 
-cd bindings/python
+cd /tmp/unicorn/bindings/python
 sudo make install install3
 popd
 echo "[+] Done" >&2
